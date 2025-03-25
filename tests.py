@@ -12,10 +12,10 @@ class TestDivide(unittest.TestCase):
         self.assertEqual(divide(6,2),3)
 
     def test_divide_2(self):
-        self.assertEqual(divide("a",-1),TypeError)
+        self.assertRaises(divide("a",-1),TypeError)
     
     def test_divide_null(self):
-        self.assertEqual(divide(None,None),TypeError)
+        self.assertRaises(divide(None,None),TypeError)
 
 
 def add2(num1):
